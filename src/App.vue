@@ -7,8 +7,8 @@
           <router-link class="nav-link" to="/ari">Äriklient</router-link>
         </div>
         <div id="top_right">
-          <router-link class="nav-link" to="/ru/era">Русский</router-link> <!-- ToDo russian language -->
-          <router-link class="nav-link" to="/en">English</router-link> <!-- ToDo english language -->
+          <a class="nav-link" to="">Русский</a> <!-- ToDo russian language -->
+          <a class="nav-link" to="">English</a> <!-- ToDo english language -->
           <a class="nav-link">Sisenen</a> <!-- ToDo popup -->
         </div>
       </div>
@@ -82,5 +82,15 @@
     background: white;
     border-top-color: purple;
     border-top: 3px solid;
+  }
+  .dropdown-menu{
+    color: purple;
+    border-top: 3px solid;
+    width: 1000px;
+    height: 300px;
+    overflow: hidden;
+  }
+  .dropdown-era{
+    background-color: white;
   }
 </style>
