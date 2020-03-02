@@ -48,7 +48,6 @@
   .nav-link{
     color: #000000;
     border: 0;
-    padding: 0;
     font-weight: bold;
     font-size: 12px;
     display: inline-block;
@@ -60,7 +59,8 @@
   }
   #top_header{
     margin: auto;
-    width: 70%;
+    width: 100%;
+    max-width: 1180px;
     height: 40px;
     display: flex;
     justify-content: space-between;
@@ -86,11 +86,26 @@
   .dropdown-menu{
     color: purple;
     border-top: 3px solid;
-    width: 1000px;
+    width: 1180px;
+    max-width: 1180px;
     height: 300px;
     overflow: hidden;
   }
   .dropdown-era{
     background-color: white;
+  }
+  .btn-secondary{
+    background: white;
+    color: black;
+    border-color: white;
+    font-size: 16px;
+  }
+  .dropdown-toggle[aria-expanded="true"] {
+    background:#FFF !important;
+    border-color: white !important;
+    color: purple !important;
+  }
+  .dropdown-toggle:after {
+    display: none;
   }
 </style>

@@ -6,7 +6,8 @@ import {BootstrapVue, IconsPlugin} from 'bootstrap-vue';
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
 
-Vue.use(Router)
+Vue.use(Router);
+
 
 export default new Router({
     routes: [
@@ -24,6 +25,7 @@ export default new Router({
             path: '/ari',
             name: 'Ariklient',
             component: HomePage
-        }
+        },
+        { path: '/', redirect: '/era' }
     ]
 })
