@@ -2,6 +2,10 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HomePage from "../components/HomePage";
 import {BootstrapVue, IconsPlugin} from 'bootstrap-vue';
+import VModal from 'vue-js-modal';
+
+Vue.use(VModal, { componentName: "foo-modal" })
+
 
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
