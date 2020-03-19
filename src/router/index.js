@@ -4,7 +4,7 @@ import HomePage from "../components/HomePage";
 import {BootstrapVue, IconsPlugin} from 'bootstrap-vue';
 import VModal from 'vue-js-modal';
 
-Vue.use(VModal, { componentName: "foo-modal" })
+Vue.use(VModal);
 
 
 Vue.use(BootstrapVue);

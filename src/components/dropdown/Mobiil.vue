@@ -21,7 +21,7 @@
             </div>
             <div class="dropdown-group-2">
                 <p class="dropdown-header">Minu teenused</p>
-                <router-link class="nav-link dropdown-text" to="/era/1">Mobiilsed teenused</router-link>
+                <router-link class="nav-link dropdown-text" to="/era/1" >Mobiilsed teenused</router-link>
                 <router-link class="nav-link dropdown-text" to="/era/1">Teenuse seadmete haldus</router-link>
                 <router-link class="nav-link dropdown-text" to="/abi/guides?q=mobiil">Juhendid ja KKK</router-link>
             </div>
