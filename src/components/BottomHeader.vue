@@ -19,7 +19,7 @@
 
 <script>
     import Mobiil from "./dropdown/Mobiil";
-    import DemoErrorModal from './DemoErrorModal.vue'
+    import DemoErrorModal from './LogInModal.vue'
     export default {
         name: "BottomHeader",
         components: {
