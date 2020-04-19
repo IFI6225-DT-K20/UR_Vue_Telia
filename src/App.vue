@@ -15,6 +15,7 @@
       <bottom-header></bottom-header>
     </div>
     <div id="container">
+      <Slider :data="['Slide 1', 'Slide 2', 'Slide 3']"></Slider>
     </div>
     <router-view/>
   </div>
@@ -22,9 +23,10 @@
 
 <script>
   import BottomHeader from "./components/BottomHeader";
+  import Slider from "./components/Slider";
   export default {
     name: 'App',
-    components: {BottomHeader},
+    components: {BottomHeader, Slider},
   }
 </script>
 
@@ -40,10 +42,12 @@
     position: sticky;
     top: 0;
     background: rgba(244, 244, 244, 0.87);
+    z-index: 200;
   }
   #container{
     height: 2000px;
     background: rgba(244, 244, 244, 0.87);
+    z-index: 50;
   }
   .nav-link{
     color: #000000;

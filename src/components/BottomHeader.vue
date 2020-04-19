@@ -8,6 +8,24 @@
             <div class="dropdowns">
                 <Mobiil></Mobiil>
             </div>
+            <div class="dropdowns">
+                <TV></TV>
+            </div>
+            <div class="dropdowns">
+                <Internet></Internet>
+            </div>
+            <div class="dropdowns">
+                <Lisateenused></Lisateenused>
+            </div>
+            <div class="dropdowns">
+                <E_pood></E_pood>
+            </div>
+            <div class="dropdowns">
+                <Abi></Abi>
+            </div>
+            <div class="dropdowns">
+                <Iseteenindus></Iseteenindus>
+            </div>
             <button
                     class="dropdowns"
                     @click="$modal.show('error-modal')">
@@ -19,12 +37,24 @@
 
 <script>
     import Mobiil from "./dropdown/Mobiil";
-    import DemoErrorModal from './LogInModal.vue'
+    import TV from "./dropdown/TV";
+    import Internet from "./dropdown/Internet";
+    import Lisateenused from "./dropdown/Lisateenused";
+    import E_pood from "./dropdown/E_pood";
+    import Abi from "./dropdown/Abi";
+    import Iseteenindus from "./dropdown/Iseteenindus";
+    import DemoErrorModal from './LogInModal.vue';
     export default {
         name: "BottomHeader",
         components: {
             Mobiil,
-            DemoErrorModal
+            DemoErrorModal,
+            TV,
+            Internet,
+            Lisateenused,
+            E_pood,
+            Abi,
+            Iseteenindus
         },
         data () {
             return {
@@ -50,6 +80,7 @@
         padding-top: 10px;
         width: 100%;
         text-align: left;
+        z-index: 100;
     }
     #logo{
         float: left;
