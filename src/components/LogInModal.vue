@@ -1,5 +1,5 @@
 <template>
-    <modal name="error-modal"
+    <modal name="login-modal"
            :classes="['v--modal', hasBugs && 'has-bugs']"
            :pivot-y="0.2"
            :width="1200"
@@ -14,7 +14,7 @@
                 <button @click="showSmartID">Smart-ID</button>
                 <button @click="showBank">Pangad</button>
             </div>
-            <div class="modal-content-login" id="modal-content">test</div>
+            <div class="modal-content-login" id="modal-content">Sisesta ID-kaart kaardilugejasse ja vajuta nuppu <br>Sisenen </div>
         </div>
     </modal>
 </template>

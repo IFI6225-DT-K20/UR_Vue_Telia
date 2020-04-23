@@ -1,6 +1,5 @@
 <template>
     <div id="bottom_header">
-        <demo-error-modal/>
         <div class="middle_bottom_header">
             <div id="logo">
                 <img src="../assets/1200px-Telia_logo.svg.png" height="30">
@@ -26,11 +25,6 @@
             <div class="dropdowns">
                 <Iseteenindus></Iseteenindus>
             </div>
-            <button
-                    class="dropdowns"
-                    @click="$modal.show('error-modal')">
-                Test modal
-            </button>
         </div>
     </div>
 </template>
@@ -43,12 +37,10 @@
     import E_pood from "./dropdown/E_pood";
     import Abi from "./dropdown/Abi";
     import Iseteenindus from "./dropdown/Iseteenindus";
-    import DemoErrorModal from './LogInModal.vue';
     export default {
         name: "BottomHeader",
         components: {
             Mobiil,
-            DemoErrorModal,
             TV,
             Internet,
             Lisateenused,

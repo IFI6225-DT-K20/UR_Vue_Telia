@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <LogInModal/>
     <div id="header_container">
       <div id="top_header">
         <div id="top_left">
@@ -7,15 +8,17 @@
           <router-link class="nav-link" to="/ari">Äriklient</router-link>
         </div>
         <div id="top_right">
-          <a class="nav-link" to="">Русский</a> <!-- ToDo russian language -->
-          <a class="nav-link" to="">English</a> <!-- ToDo english language -->
-          <a class="nav-link">Sisenen</a> <!-- ToDo popup -->
+          <router-link class="nav-link" to="/ignore1"  onclick="location.href='#/era';">Русский</router-link>
+          <router-link class="nav-link" to="/ignore2" onclick="location.href='#/era';">English</router-link>
+          <a class="nav-link" @click="$modal.show('login-modal')" id="sisenen">Sisenen</a>
         </div>
       </div>
       <bottom-header></bottom-header>
     </div>
     <div id="container">
       <Slider :data="['Slide 1', 'Slide 2', 'Slide 3']"></Slider>
+      <Categorys/>
+      <News/>
     </div>
     <router-view/>
   </div>
@@ -24,9 +27,12 @@
 <script>
   import BottomHeader from "./components/BottomHeader";
   import Slider from "./components/Slider";
+  import Categorys from "./components/Categorys";
+  import News from "./components/News";
+  import LogInModal from './components/LogInModal.vue';
   export default {
     name: 'App',
-    components: {BottomHeader, Slider},
+    components: {BottomHeader, Slider, LogInModal, Categorys, News},
   }
 </script>
 
@@ -43,11 +49,16 @@
     top: 0;
     background: rgba(244, 244, 244, 0.87);
     z-index: 200;
+    width: 100%;
   }
   #container{
     height: 2000px;
     background: rgba(244, 244, 244, 0.87);
     z-index: 50;
+  }
+  #sisenen:hover{
+    color:purple;
+    cursor: pointer;
   }
   .nav-link{
     color: #000000;
@@ -111,5 +122,13 @@
   }
   .dropdown-toggle:after {
     display: none;
+  }
+  .carousel__indicator::before{
+     background: white !important;
+     opacity: 0.3;
+   }
+  .carousel__indicator--active::before{
+    background: purple !important;
+    opacity: 1;
   }
 </style>
