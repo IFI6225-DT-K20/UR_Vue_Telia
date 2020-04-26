@@ -8,23 +8,70 @@
     export default {
         data() {
             return {
+                //TODO picture to half, add text and button
                 data: [
                     {
                         id: 1,
-                        message: 'Rolling broadcast message',
+                        message: '',
                         content(createElement) {
-                            return createElement('a', {
+                            return createElement('div', {
                                 attrs: {
                                     href: '#',
                                 },
 
                                 class: 'broadcast-content',
                             }, [
-                                createElement('img', {
+                                createElement('div', {
                                     attrs: {
-                                        src: "https://www.upload.ee/image/11516192/Screenshot_2.png",
+                                        id: "leftSlider",
+                                        class: "leftSlider"
                                     }
-                                }),
+                                },[
+                                    createElement('div', {
+                                        attrs: {
+                                            class: "sliderTitle"
+                                        }
+                                    },[
+                                        createElement('a', {
+                                            attrs: {
+                                                id: "sliderTitle"
+                                            }
+                                        }, "KUU AEGA SPORTI VÕI KINO HINNAGA ALATES 1€-ST"),
+                                    ]),
+                                    createElement('div', {
+                                        attrs: {
+                                            class: "sliderText"
+                                        }
+                                    },[
+                                        createElement('a', {
+                                            attrs: {
+                                                id: "sliderText"
+                                            }
+                                        }, "Aprillis saad TV3 filmi- ja spordikanaleid proovida kuu aega soodushinnaga.")
+                                    ]),
+                                    createElement('div', {
+                                        attrs: {
+                                            class: "sliderButton"
+                                        }
+                                    },[
+                                        createElement('a', {
+                                            attrs: {
+                                                id: "sliderButton"
+                                            }
+                                        }, "VAATAN LÄHEMALT >")
+                                    ])
+                                    ]),
+                                createElement('div', {
+                                    attrs: {
+                                        id: "rightSlider"
+                                    }
+                                },[
+                                    createElement('img', {
+                                        attrs: {
+                                            src: "https://www.upload.ee/image/11568284/Screenshot_1.png",
+                                        }
+                                    })
+                                ]),
                             ]);
                         },
                     },
@@ -32,18 +79,65 @@
                         id: 2,
                         message: 'Rolling broadcast message',
                         content(createElement) {
-                            return createElement('a', {
+                            return createElement('div', {
                                 attrs: {
                                     href: '#',
+                                    id: "slider"
                                 },
 
                                 class: 'broadcast-content',
                             }, [
-                                createElement('img', {
+                                createElement('div', {
                                     attrs: {
-                                        src: "https://www.upload.ee/image/11516086/Screenshot_1.png",
+                                        id: "leftSlider",
+                                        class: "leftSlider"
                                     }
-                                }),
+                                },[
+                                    createElement('div', {
+                                        attrs: {
+                                            class: "sliderTitle"
+                                        }
+                                    },[
+                                        createElement('a', {
+                                            attrs: {
+                                                id: "sliderTitle"
+                                            }
+                                        }, "HOIAME ÜHENDUST KA KEERULISTEL AEGADEL"),
+                                    ]),
+                                    createElement('div', {
+                                        attrs: {
+                                            class: "sliderText"
+                                        }
+                                    },[
+                                        createElement('a', {
+                                            attrs: {
+                                                id: "sliderText"
+                                            }
+                                        }, "Jälgi pidevalt uuenevat infot ja planeeri muutunud olukorras oma tegemisi mõistlikud!")
+                                    ]),
+                                    createElement('div', {
+                                        attrs: {
+                                            class: "sliderButton"
+                                        }
+                                    },[
+                                        createElement('a', {
+                                            attrs: {
+                                                id: "sliderButton"
+                                            }
+                                        }, "VAATAN LÄHEMALT >")
+                                    ])
+                                ]),
+                                createElement('div', {
+                                    attrs: {
+                                        id: "rightSlider"
+                                    }
+                                },[
+                                    createElement('img', {
+                                        attrs: {
+                                            src: "https://www.upload.ee/image/11568288/Screenshot_2.png",
+                                        }
+                                    })
+                                ])
                             ]);
                         },
                     },
@@ -60,9 +154,9 @@
         display: flex;
         padding: 0.5rem 0.75rem;
         margin: auto;
-        width: 100%;
+        max-width: 80%;
+        float: right;
     }
-
     .broadcast > .carousel {
         flex: 1;
     }

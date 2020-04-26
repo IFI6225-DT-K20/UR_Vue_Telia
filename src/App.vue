@@ -16,7 +16,7 @@
       <bottom-header></bottom-header>
     </div>
     <div id="container">
-      <Slider :data="['Slide 1', 'Slide 2', 'Slide 3']"></Slider>
+      <Slider></Slider>
       <Categorys/>
       <News/>
     </div>
@@ -58,6 +58,49 @@
   }
   #sisenen:hover{
     color:purple;
+    cursor: pointer;
+  }
+  #leftSlider{
+    float: left;
+    width: 29%;
+    text-align: left;
+    line-height: 1;
+  }
+  #rightSlider{
+    float: right;
+    width: 70%;
+  }
+  .sliderTitle{
+    font-weight: bold;
+    color: #8e008e;
+    font-size: 50px;
+    margin: 20% 0 10% 0;
+  }
+  .sliderText{
+    font-size: 18px;
+    margin-bottom: 10%;
+  }
+  .sliderButton{
+    color: white;
+    background: #930093;
+    border-radius: 40px;
+    padding: 15px 20px 15px 20px;
+    margin: 10px;
+    float: left;
+    font-size: 12px;
+    font-weight: 800;
+    position:relative;
+  }
+  .sliderButton:hover{
+    color: white;
+    background: #be00be;
+    border-radius: 40px;
+    padding: 15px 20px 15px 20px;
+    margin: 10px;
+    float: left;
+    font-size: 12px;
+    font-weight: 800;
+    position:relative;
     cursor: pointer;
   }
   .nav-link{
