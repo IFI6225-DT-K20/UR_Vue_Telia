@@ -8,7 +8,6 @@
     export default {
         data() {
             return {
-                //TODO picture to half, add text and button
                 data: [
                     {
                         id: 1,

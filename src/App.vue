@@ -19,6 +19,17 @@
       <Slider></Slider>
       <Categorys/>
       <News/>
+      <div id="specialOffer">
+        <div id="leftOffer">
+          <div id="titleLeft">OLEME OLEMAS, ET KODUST KÕIK SUJUKS</div>
+          <TextSlider/>
+          <a class="sliderButton">VAATAN LÄHEMALT ></a>
+        </div>
+        <div id="rightOffer">
+          <ImageSlider/>
+        </div>
+      </div>
+
     </div>
     <router-view/>
   </div>
@@ -30,13 +41,51 @@
   import Categorys from "./components/Categorys";
   import News from "./components/News";
   import LogInModal from './components/LogInModal.vue';
+  import TextSlider from './components/TextSlider.vue';
+  import ImageSlider from './components/ImageSlider.vue';
   export default {
     name: 'App',
-    components: {BottomHeader, Slider, LogInModal, Categorys, News},
+    components: {BottomHeader, Slider, LogInModal, Categorys, News, TextSlider, ImageSlider},
   }
 </script>
 
 <style>
+  #titleLeft{
+    font-weight: bold;
+    color: #8e008e;
+    font-size: 43px;
+    margin-bottom: 5%;
+  }
+  #offerText{
+    font-size: 18px;
+    margin-bottom: 10%;
+  }
+  #offerName{
+    font-size: 18px;
+  }
+  #offerPriceMonth{
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+  }
+  #offerPriceMonthText{
+    font-size: 20px;
+    color: black;
+  }
+  #offerPrice{
+    font-size: 14px;
+    color: silver;
+    margin-top: 1%;
+  }
+  #offerImage{
+    width: 100%;
+    height: auto;
+  }
+  #specialOffer{
+    width: 1100px;
+    margin: 6% 20% auto auto;
+    display: flex;
+  }
   #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -66,6 +115,17 @@
     text-align: left;
     line-height: 1;
   }
+  #leftOffer{
+    float: left;
+    width: 45%;
+    text-align: left;
+    line-height: 1;
+  }
+  #rightOffer{
+    float: right;
+    width: 55%;
+    line-height: 1;
+  }
   #rightSlider{
     float: right;
     width: 70%;
@@ -79,29 +139,6 @@
   .sliderText{
     font-size: 18px;
     margin-bottom: 10%;
-  }
-  .sliderButton{
-    color: white;
-    background: #930093;
-    border-radius: 40px;
-    padding: 15px 20px 15px 20px;
-    margin: 10px;
-    float: left;
-    font-size: 12px;
-    font-weight: 800;
-    position:relative;
-  }
-  .sliderButton:hover{
-    color: white;
-    background: #be00be;
-    border-radius: 40px;
-    padding: 15px 20px 15px 20px;
-    margin: 10px;
-    float: left;
-    font-size: 12px;
-    font-weight: 800;
-    position:relative;
-    cursor: pointer;
   }
   .nav-link{
     color: #000000;
@@ -174,4 +211,26 @@
     background: purple !important;
     opacity: 1;
   }
+  .sliderButton{
+    color: white !important;
+    background: #930093;
+    border-radius: 40px;
+    padding: 15px 20px 15px 20px;
+    float: left;
+    font-size: 12px;
+    font-weight: 800;
+    position:relative;
+  }
+  .sliderButton:hover{
+    color: white !important;
+    background: #be00be;
+    border-radius: 40px;
+    padding: 15px 20px 15px 20px;
+    float: left;
+    font-size: 12px;
+    font-weight: 800;
+    position:relative;
+    cursor: pointer;
+  }
+
 </style>
