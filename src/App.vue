@@ -29,7 +29,10 @@
           <ImageSlider/>
         </div>
       </div>
-
+      <div id="special">
+        <iPhone/>
+        <SwapPhone/>
+      </div>
     </div>
     <router-view/>
   </div>
@@ -43,13 +46,21 @@
   import LogInModal from './components/LogInModal.vue';
   import TextSlider from './components/TextSlider.vue';
   import ImageSlider from './components/ImageSlider.vue';
+  import iPhone from './components/iPhone.vue';
+  import SwapPhone from './components/SwapPhone.vue';
   export default {
     name: 'App',
-    components: {BottomHeader, Slider, LogInModal, Categorys, News, TextSlider, ImageSlider},
+    components: {BottomHeader, Slider, LogInModal, Categorys, News, TextSlider, ImageSlider, iPhone, SwapPhone},
   }
 </script>
 
 <style>
+  #special{
+    max-width: 1100px;
+    display: flex;
+    width: 100%;
+    margin: 100px auto;
+  }
   #titleLeft{
     font-weight: bold;
     color: #8e008e;
