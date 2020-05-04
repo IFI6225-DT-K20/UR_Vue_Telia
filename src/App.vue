@@ -33,6 +33,10 @@
         <iPhone/>
         <SwapPhone/>
       </div>
+      <div id="community">
+          <img id="communityBackground" alt="backGround" src="https://res.cloudinary.com/telia/image/upload/f_auto,fl_lossy,q_auto:best/era/avaleht/full_bg.png"/>
+        <CommunityNews/>
+      </div>
     </div>
     <router-view/>
   </div>
@@ -48,13 +52,26 @@
   import ImageSlider from './components/ImageSlider.vue';
   import iPhone from './components/iPhone.vue';
   import SwapPhone from './components/SwapPhone.vue';
+  import CommunityNews from './components/CommunityNews.vue';
   export default {
     name: 'App',
-    components: {BottomHeader, Slider, LogInModal, Categorys, News, TextSlider, ImageSlider, iPhone, SwapPhone},
+    components: {BottomHeader, Slider, LogInModal, Categorys, News, TextSlider, ImageSlider, iPhone, SwapPhone, CommunityNews},
   }
 </script>
 
 <style>
+  #community{
+    height: 175px;
+  }
+  #communityBackground{
+    width: 100%;
+    height: 520px;
+    z-index: -1;
+    position: absolute;
+    overflow: hidden;
+    right: 0;
+    left: 0;
+  }
   #special{
     max-width: 1100px;
     display: flex;
