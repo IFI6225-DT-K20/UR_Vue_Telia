@@ -2,7 +2,7 @@
     <div id="communityNews">
         <div id="topNews">
             <div id="description">
-                <h4 id="title">PANUSTAME ÜHISKONDA KÄBI TEHNOLOOGIA</h4>
+                <h4 id="title">PANUSTAME ÜHISKONDA LÄBI TEHNOLOOGIA</h4>
                 <a class="text">Toetame digitaalset arengut innovatsiooni, hariduse, mitmekesisuse, kaasatuse, keskkonna ning kultuurisündmuste kaudu ning maandame riske, et sinu internetikogemused oleksid alati turvalised.</a>
             </div>
         </div>
@@ -12,7 +12,7 @@
                     <img alt="vesi" src="https://res.cloudinary.com/telia/image/upload/f_auto,fl_lossy,q_auto:best,w_180/era/csr-daring.png"/>
                 </div>
                 <div class="newsText">
-                    <h3>Daring Goals</h3>
+                    <h3 class="newsTitle">Daring Goals</h3>
                     <a>Meie keskkonnaeesmärgid aastaks 2030. Vähendame CO2 emissiooni ja jäätmeid nullini, kaasates selleks kõiki töötajaid</a>
                 </div>
             </div>
@@ -21,9 +21,9 @@
                     <img alt="suurim julgus" src="https://res.cloudinary.com/telia/image/upload/f_auto,fl_lossy,q_auto:best,w_180/era/csr-suurimjulgus.png"/>
                 </div>
                 <div class="newsText">
-                    <h3>Suurim julgus</h3>
-                    <p>Julge võidelda küberkiusamise vastu!</p>
-                    <a>#suurimjulgus</a>
+                    <h3 class="newsTitle">Suurim julgus</h3>
+                    <a>Julge võidelda küberkiusamise vastu!</a><br/>
+                    <a id="boldText">#suurimjulgus</a>
                 </div>
             </div>
         </div>
@@ -42,35 +42,54 @@
     }
     #communityNews{
         margin: auto;
-        width: 1100px;
+        width: 1180px;
     }
     #description{
         width: 50%;
         float: left;
         color: white;
         text-align: left;
+        font-size: 16px;
     }
     #title{
+        font-size: 32px;
+        font-weight: 700;
     }
     #topNews{
         display: flex;
-        padding-bottom: 10%;
+        padding-bottom: 7%;
+        padding-top: 4%;
     }
     #leftNews{
         float: left;
-        width: 48%;
+        width: 49%;
         background: white;
+        margin-right: 10px;
+        display: flex;
     }
     #rightNews{
         float: right;
-        width: 48%;
+        width: 49%;
         background: white;
+        margin-left: 10px;
+        display: flex;
     }
     .image{
         float: left;
     }
     .newsText{
         text-align: left;
-        left: 25%;
+        padding-left: 4%;
+        padding-top: 4%
+    }
+    #news{
+        display: flex;
+    }
+    .newsTitle{
+        font-size: 20px;
+        color: black;
+    }
+    #boldText{
+        font-weight: bolder;
     }
 </style>

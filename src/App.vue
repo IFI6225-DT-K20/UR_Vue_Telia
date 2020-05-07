@@ -37,7 +37,9 @@
           <img id="communityBackground" alt="backGround" src="https://res.cloudinary.com/telia/image/upload/f_auto,fl_lossy,q_auto:best/era/avaleht/full_bg.png"/>
         <CommunityNews/>
       </div>
+      <Digitark/>
     </div>
+    <Footer/>
     <router-view/>
   </div>
 </template>
@@ -53,15 +55,18 @@
   import iPhone from './components/iPhone.vue';
   import SwapPhone from './components/SwapPhone.vue';
   import CommunityNews from './components/CommunityNews.vue';
+  import Footer from './components/Footer.vue';
+  import Digitark from './components/Digitark.vue';
   export default {
     name: 'App',
-    components: {BottomHeader, Slider, LogInModal, Categorys, News, TextSlider, ImageSlider, iPhone, SwapPhone, CommunityNews},
+    components: {BottomHeader, Slider, LogInModal, Categorys, News, TextSlider, ImageSlider, iPhone, SwapPhone, CommunityNews, Footer, Digitark},
   }
 </script>
 
 <style>
   #community{
-    height: 175px;
+    min-height: 520px;
+    display: flex;
   }
   #communityBackground{
     width: 100%;
@@ -124,14 +129,14 @@
     height: 110px;
     position: sticky;
     top: 0;
-    background: rgba(244, 244, 244, 0.87);
+    background: #f2f2f2;
     z-index: 200;
     width: 100%;
   }
   #container{
-    height: 2000px;
     background: rgba(244, 244, 244, 0.87);
     z-index: 50;
+    display: inline;
   }
   #sisenen:hover{
     color:purple;
@@ -260,5 +265,22 @@
     position:relative;
     cursor: pointer;
   }
-
+  .newsButton{
+    border-radius: 20px;
+    padding: 10px;
+    color: purple !important;
+    margin: 10px;
+    float: left;
+    font-size: 12px;
+    font-weight: 800;
+    position:relative;
+    border: 2px solid transparent;
+  }
+  .newsButton:hover{
+    border: 2px solid purple;
+    cursor: pointer;
+    position:relative;
+    padding: 10px;
+    margin: 10px;
+  }
 </style>

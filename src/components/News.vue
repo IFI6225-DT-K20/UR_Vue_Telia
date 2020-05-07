@@ -32,21 +32,6 @@
         float: left;
         margin-right: 100%;
     }
-    #newsButton{
-        border-radius: 20px;
-        padding: 10px;
-        color: purple;
-        margin: 10px;
-        float: left;
-        font-size: 12px;
-        font-weight: 800;
-        position:relative;
-    }
-    #newsButton:hover{
-        border: 2px solid;
-        cursor: pointer;
-        position:relative;
-    }
     .article{
         display: inline-block;
         float: left;
