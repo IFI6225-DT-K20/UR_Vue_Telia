@@ -40,7 +40,7 @@
         border-right: 1px solid rgba(0, 0, 0, 0.1);
     }
     .category:hover{
-        color:purple;
+        color:#990ae3;
         cursor: pointer;
     }
 </style>

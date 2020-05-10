@@ -40,6 +40,10 @@
       <Digitark/>
     </div>
     <Footer/>
+    <div id="footerBottom">
+        <a id="leftFooterText">Telia Eesti AS</a>
+        <a>Telia is a registered Trademark of Telia Company AB</a>
+    </div>
     <router-view/>
   </div>
 </template>
@@ -64,6 +68,18 @@
 </script>
 
 <style>
+  #leftFooterText{
+    margin-right: 2%;
+    color: black;
+    font-weight: bold;
+  }
+  #footerBottom{
+    display: flex;
+    max-width: 1180px;
+    margin: 3% auto auto;
+    width: 100%;
+    font-size: 11px;
+  }
   #community{
     min-height: 520px;
     display: flex;
@@ -85,7 +101,7 @@
   }
   #titleLeft{
     font-weight: bold;
-    color: #8e008e;
+    color: #990ae3;
     font-size: 43px;
     margin-bottom: 5%;
   }
@@ -139,7 +155,7 @@
     display: inline;
   }
   #sisenen:hover{
-    color:purple;
+    color:#990ae3;
     cursor: pointer;
   }
   #leftSlider{
@@ -165,7 +181,7 @@
   }
   .sliderTitle{
     font-weight: bold;
-    color: #8e008e;
+    color: #990ae3;
     font-size: 50px;
     margin: 20% 0 10% 0;
   }
@@ -183,7 +199,7 @@
     padding: 0 20px 0 20px;
   }
   .nav-link:hover{
-    color:purple;
+    color:#990ae3;
   }
   #top_header{
     margin: auto;
@@ -206,13 +222,13 @@
     height: 70px;
   }
   .router-link-active{
-    color: purple;
+    color: #990ae3;
     background: white;
-    border-top-color: purple;
+    border-top-color: #990ae3;
     border-top: 3px solid;
   }
   .dropdown-menu{
-    color: purple;
+    color: #990ae3;
     border-top: 3px solid;
     width: 1180px;
     max-width: 1180px;
@@ -231,7 +247,7 @@
   .dropdown-toggle[aria-expanded="true"] {
     background:#FFF !important;
     border-color: white !important;
-    color: purple !important;
+    color: #990ae3 !important;
   }
   .dropdown-toggle:after {
     display: none;
@@ -241,12 +257,12 @@
      opacity: 0.3;
    }
   .carousel__indicator--active::before{
-    background: purple !important;
+    background: #990ae3 !important;
     opacity: 1;
   }
   .sliderButton{
     color: white !important;
-    background: #930093;
+    background: #990ae3;
     border-radius: 40px;
     padding: 15px 20px 15px 20px;
     float: left;
@@ -256,7 +272,7 @@
   }
   .sliderButton:hover{
     color: white !important;
-    background: #be00be;
+    background: #990ae3;
     border-radius: 40px;
     padding: 15px 20px 15px 20px;
     float: left;
@@ -268,7 +284,7 @@
   .newsButton{
     border-radius: 20px;
     padding: 10px;
-    color: purple !important;
+    color: #990ae3 !important;
     margin: 10px;
     float: left;
     font-size: 12px;
@@ -277,7 +293,7 @@
     border: 2px solid transparent;
   }
   .newsButton:hover{
-    border: 2px solid purple;
+    border: 2px solid #990ae3;
     cursor: pointer;
     position:relative;
     padding: 10px;

@@ -14,9 +14,7 @@
             </div>
         </div>
         <div class="footerMenu">
-            <div class="title">
-                Kontaktid
-            </div>
+            <div class="title">Kontaktid</div>
             <div class="content">
                 <h6 class="contetText">Kontaktid</h6>
                 <h6 class="contetText">Esindused</h6>
@@ -38,10 +36,14 @@
                 Sotsiaalmeedia
             </div>
             <div class="content">
-                <h6>Digitark</h6>
-                <h6>Facebook</h6>
-                <h6>Instagram</h6>
-                <h6>LinkedIn</h6>
+                <div id="leftContent">
+                    <img class="socialImage" src="../assets/d.png" alt="Digitark"/><h6 class="socialText">Digitark</h6>
+                    <img class="socialImage" src="../assets/f.png" alt="Facebook"/><h6 class="socialText">Facebook</h6>
+                </div>
+                <div id="rightContent">
+                    <img class="socialImage" src="../assets/ins.png" alt="Instagram"/><h6 class="socialText">Instagram</h6>
+                    <img class="socialImage" src="../assets/in.png" alt="LinkedIn"/><h6 class="socialText">LinkedIn</h6>
+                </div>
             </div>
         </div>
     </div>
@@ -64,11 +66,29 @@
         text-align: left;
     }
     .title{
-        font-size: 22px;
+        font-size: 20px;
         margin-bottom: 3%;
+        color: black;
     }
     .contetText{
-        line-height: 2.5;
+        line-height: 1.0;
         font-size: 11px;
+        color: black;
+    }
+    .socialImage{
+        float: left;
+        margin-right: 5%;
+    }
+    #leftContent{
+        width: 50%;
+        float: left;
+    }
+    #rightContent{
+        width: 50%;
+        float: right;
+    }
+    .socialText{
+        font-size: 11px;
+
     }
 </style>

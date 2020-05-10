@@ -24,7 +24,7 @@
         font-size: 13px;
     }
     #context:hover{
-        color:purple;
+        color:#990ae3;
         cursor: pointer;
     }
 </style>
