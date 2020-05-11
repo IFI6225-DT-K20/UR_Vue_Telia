@@ -27,22 +27,24 @@
                 <router-link class="nav-link dropdown-text" to="/notdoing">ID-kaardi lugejad</router-link>
                 <router-link class="nav-link dropdown-text" to="/notdoing">Andmekandjad</router-link>
             </div>
-            <div class="dropdown-group-1">
-                <p class="dropdown-header">TELERID</p>
-                <router-link class="nav-link dropdown-text" to="/notdoing">Telerid</router-link>
-                <router-link class="nav-link dropdown-text" to="/notdoing">Seinakinnitused</router-link>
-                <router-link class="nav-link dropdown-text" to="/notdoing">Puldid</router-link>
-                <router-link class="nav-link dropdown-text" to="/notdoing">Apple TV</router-link>
-                <router-link class="nav-link dropdown-text" to="/notdoing">Mängukonsoolid</router-link>
-            </div>
-            <div class="dropdown-group-3">
-                <p class="dropdown-header">TEENUSTE SEADMED</p>
-                <router-link class="nav-link dropdown-text" to="/notdoing">Digiboksid</router-link>
-                <router-link class="nav-link dropdown-text" to="/notdoing">Puldid ja patareid</router-link>
-                <router-link class="nav-link dropdown-text" to="/notdoing">Kaablid</router-link>
-                <router-link class="nav-link dropdown-text" to="/notdoing">Ruuterid</router-link>
-                <router-link class="nav-link dropdown-text" to="/notdoing">Võrguseadmed ja lisad</router-link>
-                <router-link class="nav-link dropdown-text" to="/notdoing">Kõnekaardid ja SIM-kaardid</router-link>
+            <div class="dropdown-column">
+                <div class="dropdown-group-1">
+                    <p class="dropdown-header">TELERID</p>
+                    <router-link class="nav-link dropdown-text" to="/notdoing">Telerid</router-link>
+                    <router-link class="nav-link dropdown-text" to="/notdoing">Seinakinnitused</router-link>
+                    <router-link class="nav-link dropdown-text" to="/notdoing">Puldid</router-link>
+                    <router-link class="nav-link dropdown-text" to="/notdoing">Apple TV</router-link>
+                    <router-link class="nav-link dropdown-text" to="/notdoing">Mängukonsoolid</router-link>
+                </div>
+                <div class="dropdown-group-3">
+                    <p class="dropdown-header">TEENUSTE SEADMED</p>
+                    <router-link class="nav-link dropdown-text" to="/notdoing">Digiboksid</router-link>
+                    <router-link class="nav-link dropdown-text" to="/notdoing">Puldid ja patareid</router-link>
+                    <router-link class="nav-link dropdown-text" to="/notdoing">Kaablid</router-link>
+                    <router-link class="nav-link dropdown-text" to="/notdoing">Ruuterid</router-link>
+                    <router-link class="nav-link dropdown-text" to="/notdoing">Võrguseadmed ja lisad</router-link>
+                    <router-link class="nav-link dropdown-text" to="/notdoing">Kõnekaardid ja SIM-kaardid</router-link>
+                </div>
             </div>
             <div class="dropdown-group-1">
                 <p class="dropdown-header">SPORT JA VABA AEG</p>
@@ -96,6 +98,16 @@
     .dropdown-group-2{
         float:left;
         width: 200px;
+    }
+    .dropdown-group-3{
+        float:left;
+        width: 200px;
+        padding-right: 50px;
+        padding-left: 20px;
+    }
+    .dropdown-column{
+        float: left;
+        max-width: 200px;
     }
     .dropdown-header{
         font-weight: bold;

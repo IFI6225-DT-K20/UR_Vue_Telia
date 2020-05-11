@@ -1,15 +1,17 @@
 <template>
-    <div @mouseover="onOver" @mouseleave="onLeave">
+    <div @mouseover="onOver">
         <b-dropdown append-icon="" id="dropdown-grouped" ref="dropdown" text="Lisateenused" class="m-2 dropdown-era">
-            <div class="dropdown-group-1">
-                <p class="dropdown-header">MEELELAHUTUS</p>
-                <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/">Spotify muusikateenus</router-link>
-                <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/">Ajalehed ja ajakirjad</router-link>
-            </div>
-            <div class="dropdown-group-3">
-                <p class="dropdown-header">SEADMETE OST</p>
-                <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/">Järelmaks</router-link>
-                <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/">Vana uueks</router-link>
+            <div class="dropdown-column">
+                <div class="dropdown-group-1">
+                    <p class="dropdown-header">MEELELAHUTUS</p>
+                    <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/">Spotify muusikateenus</router-link>
+                    <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/">Ajalehed ja ajakirjad</router-link>
+                </div>
+                <div class="dropdown-group-3">
+                    <p class="dropdown-header">SEADMETE OST</p>
+                    <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/">Järelmaks</router-link>
+                    <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/">Vana uueks</router-link>
+                </div>
             </div>
             <div class="dropdown-group-1">
                 <p class="dropdown-header">TURVALISUS JA KINDLUSTUS</p>
@@ -71,6 +73,16 @@
     .dropdown-group-2{
         float:left;
         width: 200px;
+    }
+    .dropdown-group-3{
+        float:left;
+        width: 200px;
+        padding-right: 50px;
+        padding-left: 20px;
+    }
+    .dropdown-column{
+        float: left;
+        max-width: 200px;
     }
     .dropdown-header{
         font-weight: bold;

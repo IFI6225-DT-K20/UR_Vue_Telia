@@ -45,6 +45,9 @@
         <a>Telia is a registered Trademark of Telia Company AB</a>
     </div>
     <router-view/>
+    <div id="contact">
+      <img src="./assets/contact.png" alt="" />
+    </div>
   </div>
 </template>
 
@@ -68,6 +71,14 @@
 </script>
 
 <style>
+  #contact{
+    width: 60px;
+    position: sticky;
+    bottom: 3%;
+    right: 1%;
+    float: right;
+    z-index: 200;
+  }
   #leftFooterText{
     margin-right: 2%;
     color: black;
