@@ -104,17 +104,17 @@
 </script>
 
 <style scoped>
-    .broadcast {
-        border: 1px solid #eee;
-        border-radius: 0.25rem;
-        display: flex;
-        margin: auto;
-        float: left;
+    @media only screen and (max-width: 600px){
+
     }
-    .broadcast > .carousel {
-        flex: 1;
-    }
-    .broadcast > .carousel__indicator{
-        background: red;
+    @media only screen and (min-width: 600px){
+        .broadcast {
+            border: 1px solid #eee;
+            border-radius: 0.25rem;
+            display: flex;
+            margin: auto;
+            float: left;
+            width: 100%;
+        }
     }
 </style>

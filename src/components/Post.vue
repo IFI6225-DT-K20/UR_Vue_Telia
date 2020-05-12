@@ -18,15 +18,14 @@
 </script>
 
 <style scoped>
-    #date{
-        float: left;
-    }
     #leftPost{
         float: left;
     }
     .post{
         display: flex;
         padding-bottom: 5%;
+        width: 100%;
+        float: left;
     }
     #rightPost{
         margin-left: 3%;

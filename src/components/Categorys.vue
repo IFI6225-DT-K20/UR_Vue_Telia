@@ -21,26 +21,50 @@
 </script>
 
 <style scoped>
-    #category{
-        max-width: 1180px;
-        flex: 1;
-        margin: -20px auto auto auto;
-        width: 100%;
-        display: inline-block;
-        position: sticky;
-        z-index: 100;
-        background: white;
-        border-radius: 3px;
+    @media only screen and (max-width: 600px){
+        #category{
+            flex: 1;
+            margin: auto;
+            width: 100%;
+            display: inline-block;
+            position: sticky;
+            z-index: 100;
+            background: white;
+            border-radius: 3px;
+        }
+        .category{
+            min-width: 290px;
+            min-height: 80px;
+            float: left;
+            border-right: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        .category:hover{
+            color:#990ae3;
+            cursor: pointer;
+        }
     }
-    .category{
-        min-width: 290px;
-        min-height: 80px;
-        float: left;
-        padding: 12px 60px 25px;
-        border-right: 1px solid rgba(0, 0, 0, 0.1);
-    }
-    .category:hover{
-        color:#990ae3;
-        cursor: pointer;
+    @media only screen and (min-width: 600px){
+        #category{
+            max-width: 1180px;
+            flex: 1;
+            margin: -20px auto auto auto;
+            width: 100%;
+            display: inline-block;
+            position: sticky;
+            z-index: 100;
+            background: white;
+            border-radius: 3px;
+        }
+        .category{
+            min-width: 290px;
+            min-height: 80px;
+            float: left;
+            padding: 12px 60px 25px;
+            border-right: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        .category:hover{
+            color:#990ae3;
+            cursor: pointer;
+        }
     }
 </style>

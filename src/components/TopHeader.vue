@@ -5,8 +5,8 @@
             <router-link class="nav-link" to="/ari">Äriklient</router-link>
         </div>
         <div id="top_right">
-            <router-link class="nav-link" to="/ignore1"  onclick="location.href='#/era';">Русский</router-link>
-            <router-link class="nav-link" to="/ignore2" onclick="location.href='#/era';">English</router-link>
+            <router-link id="language1" class="nav-link" to="/ignore1"  onclick="location.href='#/era';">Русский</router-link>
+            <router-link id="language2" class="nav-link" to="/ignore2" onclick="location.href='#/era';">English</router-link>
             <a class="nav-link" @click="$modal.show('login-modal')" id="sisenen">Sisenen</a>
         </div>
     </div>

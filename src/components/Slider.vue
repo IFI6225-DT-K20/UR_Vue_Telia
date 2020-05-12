@@ -22,6 +22,18 @@
                             }, [
                                 createElement('div', {
                                     attrs: {
+                                        id: "rightSlider"
+                                    }
+                                },[
+                                    createElement('img', {
+                                        attrs: {
+                                            src: "https://www.upload.ee/image/11568284/Screenshot_1.png",
+                                            id: "sliderImage"
+                                        }
+                                    })
+                                ]),
+                                createElement('div', {
+                                    attrs: {
                                         id: "leftSlider",
                                         class: "leftSlider"
                                     }
@@ -59,17 +71,6 @@
                                             }
                                         }, "VAATAN LÄHEMALT >")
                                     ])
-                                    ]),
-                                createElement('div', {
-                                    attrs: {
-                                        id: "rightSlider"
-                                    }
-                                },[
-                                    createElement('img', {
-                                        attrs: {
-                                            src: "https://www.upload.ee/image/11568284/Screenshot_1.png",
-                                        }
-                                    })
                                 ]),
                             ]);
                         },
@@ -86,6 +87,18 @@
 
                                 class: 'broadcast-content',
                             }, [
+                                createElement('div', {
+                                    attrs: {
+                                        id: "rightSlider"
+                                    }
+                                },[
+                                    createElement('img', {
+                                        attrs: {
+                                            src: "https://www.upload.ee/image/11568288/Screenshot_2.png",
+                                            id: "sliderImage"
+                                        }
+                                    })
+                                ]),
                                 createElement('div', {
                                     attrs: {
                                         id: "leftSlider",
@@ -126,17 +139,6 @@
                                         }, "VAATAN LÄHEMALT >")
                                     ])
                                 ]),
-                                createElement('div', {
-                                    attrs: {
-                                        id: "rightSlider"
-                                    }
-                                },[
-                                    createElement('img', {
-                                        attrs: {
-                                            src: "https://www.upload.ee/image/11568288/Screenshot_2.png",
-                                        }
-                                    })
-                                ])
                             ]);
                         },
                     },
@@ -147,19 +149,32 @@
 </script>
 
 <style scoped>
-    .broadcast {
-        border: 1px solid #eee;
-        border-radius: 0.25rem;
-        display: flex;
-        padding: 0.5rem 0.75rem;
-        margin: auto;
-        max-width: 80%;
-        float: right;
+    @media only screen and (max-width: 600px){
+        .broadcast {
+            border: 1px solid #eee;
+            border-radius: 0.25rem;
+            display: flex;
+            margin: auto auto 10%;
+            max-width: 100%;
+            float: right;
+            min-height: 500px;
+        }
+        .broadcast > .carousel {
+            flex: 1;
+        }
     }
-    .broadcast > .carousel {
-        flex: 1;
-    }
-    .broadcast > .carousel__indicator{
-        background: red;
+    @media only screen and (min-width: 600px){
+        .broadcast {
+            border: 1px solid #eee;
+            border-radius: 0.25rem;
+            display: flex;
+            padding: 0.5rem 0.75rem;
+            margin: auto;
+            max-width: 80%;
+            float: right;
+        }
+        .broadcast > .carousel {
+            flex: 1;
+        }
     }
 </style>

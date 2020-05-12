@@ -56,10 +56,19 @@
 </script>
 
 <style scoped>
-    #footer{
-        display: flex;
-        width: 1180px;
-        margin: 5% auto auto;
+    @media only screen and (max-width: 600px){
+        #footer{
+            display: flex;
+            width: 100%;
+            margin: 5% auto auto;
+        }
+    }
+    @media only screen and (min-width: 600px){
+        #footer{
+            display: flex;
+            width: 1180px;
+            margin: 5% auto auto;
+        }
     }
     .footerMenu{
         width: 25%;

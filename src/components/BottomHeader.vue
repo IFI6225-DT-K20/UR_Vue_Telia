@@ -69,25 +69,39 @@
 </script>
 
 <style scoped>
+    @media only screen and (max-width: 600px){
+        #bottom_header{
+            padding-top: 10px;
+            width: 100%;
+            text-align: left;
+            z-index: 100;
+        }
+        .dropdowns{
+            visibility: hidden;
+            width: 0;
+        }
+    }
+    @media only screen and (min-width: 600px){
+        .middle_bottom_header{
+            margin: auto;
+            width: 100%;
+            max-width: 1180px;
+            height: 40px;
+            display: flex;
+        }
+        #bottom_header{
+            padding-top: 10px;
+            width: 100%;
+            text-align: left;
+            z-index: 100;
+        }
+    }
     .border_left{
         border-left: 1px solid black;
-    }
-    #offers{
-        color: black;
-        font-weight: normal;
-        font-size: 16px;
-        text-align: center;
-        padding-top: 15px;
     }
     #offers:hover{
         color: #990ae3;
         cursor: pointer;
-    }
-    #bottom_header{
-        padding-top: 10px;
-        width: 100%;
-        text-align: left;
-        z-index: 100;
     }
     #logo{
         float: left;
@@ -97,12 +111,5 @@
     .dropdowns{
         display: inline-block;
         padding-bottom: 4%;
-    }
-    .middle_bottom_header{
-        margin: auto;
-        width: 100%;
-        max-width: 1180px;
-        height: 40px;
-        display: flex;
     }
 </style>

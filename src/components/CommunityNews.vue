@@ -37,59 +37,117 @@
 </script>
 
 <style scoped>
-    #communityNews{
-        z-index: 100;
+    @media only screen and (max-width: 600px){
+        #title{
+            font-size: 22px;
+            font-weight: 700;
+        }
+        #topNews{
+            display: flex;
+            padding-bottom: 7%;
+            padding-top: 4%;
+        }
+        #description{
+            width: 90%;
+            float: left;
+            color: white;
+            text-align: left;
+            font-size: 14px;
+            margin-top: 20%;
+            margin-left: 3%;
+        }
+        #leftNews{
+            float: left;
+            width: 100%;
+            background: white;
+            margin-right: 10px;
+            display: flex;
+            margin-bottom: 3%;
+            border-radius: 1%;
+        }
+        #rightNews{
+            float: right;
+            width: 100%;
+            background: white;
+            margin-left: 10px;
+            display: flex;
+            border-radius: 1%;
+        }
+        #news{
+            margin-left: 3%;
+            margin-right: 3%;
+        }
+        .image{
+            float: left;
+        }
+        .newsText{
+            text-align: left;
+            padding-left: 4%;
+            padding-top: 4%
+        }
+        .newsTitle{
+            font-size: 20px;
+            color: black;
+        }
+        #boldText{
+            font-weight: bolder;
+        }
     }
-    #communityNews{
-        margin: auto;
-        width: 1180px;
-    }
-    #description{
-        width: 50%;
-        float: left;
-        color: white;
-        text-align: left;
-        font-size: 16px;
-    }
-    #title{
-        font-size: 32px;
-        font-weight: 700;
-    }
-    #topNews{
-        display: flex;
-        padding-bottom: 7%;
-        padding-top: 4%;
-    }
-    #leftNews{
-        float: left;
-        width: 49%;
-        background: white;
-        margin-right: 10px;
-        display: flex;
-    }
-    #rightNews{
-        float: right;
-        width: 49%;
-        background: white;
-        margin-left: 10px;
-        display: flex;
-    }
-    .image{
-        float: left;
-    }
-    .newsText{
-        text-align: left;
-        padding-left: 4%;
-        padding-top: 4%
-    }
-    #news{
-        display: flex;
-    }
-    .newsTitle{
-        font-size: 20px;
-        color: black;
-    }
-    #boldText{
-        font-weight: bolder;
+    @media only screen and (min-width: 600px){
+        #communityNews{
+            z-index: 100;
+        }
+        #communityNews{
+            margin: auto;
+            width: 1180px;
+        }
+        #description{
+            width: 50%;
+            float: left;
+            color: white;
+            text-align: left;
+            font-size: 16px;
+        }
+        #title{
+            font-size: 32px;
+            font-weight: 700;
+        }
+        #topNews{
+            display: flex;
+            padding-bottom: 7%;
+            padding-top: 4%;
+        }
+        #leftNews{
+            float: left;
+            width: 49%;
+            background: white;
+            margin-right: 10px;
+            display: flex;
+        }
+        #rightNews{
+            float: right;
+            width: 49%;
+            background: white;
+            margin-left: 10px;
+            display: flex;
+        }
+        .image{
+            float: left;
+        }
+        .newsText{
+            text-align: left;
+            padding-left: 4%;
+            padding-top: 4%
+        }
+        #news{
+            display: flex;
+        }
+        .newsTitle{
+            font-size: 20px;
+            color: black;
+        }
+        #boldText{
+            font-weight: bolder;
+        }
     }
 </style>
