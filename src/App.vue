@@ -2,17 +2,7 @@
   <div id="app">
     <LogInModal/>
     <div id="header_container">
-      <div id="top_header">
-        <div id="top_left">
-          <router-link class="nav-link" to="/era">Eraklient</router-link>
-          <router-link class="nav-link" to="/ari">Äriklient</router-link>
-        </div>
-        <div id="top_right">
-          <router-link class="nav-link" to="/ignore1"  onclick="location.href='#/era';">Русский</router-link>
-          <router-link class="nav-link" to="/ignore2" onclick="location.href='#/era';">English</router-link>
-          <a class="nav-link" @click="$modal.show('login-modal')" id="sisenen">Sisenen</a>
-        </div>
-      </div>
+      <TopHeader></TopHeader>
       <bottom-header></bottom-header>
     </div>
     <div id="container">
@@ -45,7 +35,10 @@
         <a>Telia is a registered Trademark of Telia Company AB</a>
     </div>
     <router-view/>
-    <div id="contact">
+    <div id="x" @mousedown="onClick" @mouseover="onOver" @mouseleave="onLeave">
+      <img src="./assets/x.png" alt="" />
+    </div>
+    <div id="contact" @mouseover="onOver" @mouseleave="onLeave">
       <img src="./assets/contact.png" alt="" />
     </div>
   </div>
@@ -64,9 +57,24 @@
   import CommunityNews from './components/CommunityNews.vue';
   import Footer from './components/Footer.vue';
   import Digitark from './components/Digitark.vue';
+  import TopHeader from "@/components/TopHeader";
   export default {
     name: 'App',
-    components: {BottomHeader, Slider, LogInModal, Categorys, News, TextSlider, ImageSlider, iPhone, SwapPhone, CommunityNews, Footer, Digitark},
+    methods: {
+      onOver() {
+        document.getElementById("x").style.visibility = "visible";
+      },
+      onLeave() {
+        document.getElementById("x").style.visibility = "hidden";
+      },
+      onClick(){
+        document.getElementById("contact").style.visibility = "hidden";
+        document.getElementById("x").style.visibility = "hidden";
+      }
+    },
+    components: {
+      TopHeader,
+      BottomHeader, Slider, LogInModal, Categorys, News, TextSlider, ImageSlider, iPhone, SwapPhone, CommunityNews, Footer, Digitark},
   }
 </script>
 
@@ -78,6 +86,21 @@
     right: 1%;
     float: right;
     z-index: 200;
+  }
+  #contact:hover{
+    cursor: pointer;
+  }
+  #x{
+    width: 60px;
+    position: sticky;
+    bottom: 9.5%;
+    right: 1.6%;
+    float: right;
+    z-index: 250;
+    visibility: hidden;
+  }
+  #x:hover{
+    cursor: pointer;
   }
   #leftFooterText{
     margin-right: 2%;

@@ -14,7 +14,11 @@
                 <button id="smartid" @click="showSmartID">Smart-ID</button>
                 <button id="bank" @click="showBank">Pangad</button>
             </div>
-            <div class="modal-content-login" id="modal-content">Sisesta ID-kaart kaardilugejasse ja vajuta nuppu <br>"Sisenen"</div>
+            <div class="modal-content-login" id="modal-content">Sisesta ID-kaart kaardilugejasse ja vajuta nuppu <br>"Sisenen"
+                <div style="width: 300px">
+                    <a id="logIn">SISENEN</a>
+                </div>
+            </div>
         </div>
     </modal>
 </template>
@@ -36,22 +40,28 @@
             showIDCard () {
                 this.content = "";
                 this.content += 'Sisesta ID-kaart kaardilugejasse ja vajuta nuppu <br>"Sisenen"';
+                this.content += '<div style="width: 300px">\n' +
+                    '                    <a id="logIn">SISENEN</a>\n' +
+                    '                </div>';
                 document.getElementById("modal-content").innerHTML = this.content;
                 this.disableBorderBottom();
                 document.getElementById("idcard").style.borderBottom = "2px solid purple";
             },
             showMobileID () {
                 this.content = "";
-                this.content += '<input type="input" class="form__field" placeholder="Name" name="name" id=\'name\' required />';
-                this.content += '<label for="name" class="form__label">Name</label>';
+                this.content += '<input type="input" class="form__field" placeholder="Mobiilinumber:" name="name" id=\'name\' required />';
+                this.content += '<label for="name" class="form__label">Mobiilinumber:</label>';
+                this.content += '<div style="width: 300px">\n' +
+                    '                    <a id="logIn">SISENEN</a>\n' +
+                    '                </div>';
                 document.getElementById("modal-content").innerHTML = this.content;
                 this.disableBorderBottom();
                 document.getElementById("mobileid").style.borderBottom = "2px solid purple";
             },
             showSmartID () {
                 this.content = "";
-                this.content += '<input type="input" class="form__field" placeholder="Name" name="name" id=\'name\' required />';
-                this.content += '<label for="name" class="form__label">Name</label>';
+                this.content += '<input type="input" class="form__field" placeholder="Isikukood:" name="name" id=\'name\' required />';
+                this.content += '<label for="name" class="form__label">Isikukood:</label>';
                 this.content += '<div class="select-box">\n' +
                     '  <div class="select-box__current" tabindex="1">\n' +
                     '    <div class="select-box__value">\n' +
@@ -79,6 +89,9 @@
                     '    </li>\n' +
                     '  </ul>\n' +
                     '</div>';
+                this.content += '<div style="width: 300px">\n' +
+                    '                    <a id="logIn">SISENEN</a>\n' +
+                    '                </div>';
                 document.getElementById("modal-content").innerHTML = this.content;
                 this.disableBorderBottom();
                 document.getElementById("smartid").style.borderBottom = "2px solid purple";
@@ -92,6 +105,9 @@
                 this.content += "<div id='COOP'>COOP PANK</div>";
                 this.content += "<div id='LUMINOR'>LUMINOR</div>";
                 this.content += "</div>";
+                this.content += '<div style="width: 300px">\n' +
+                    '                    <a id="logIn">SISENEN</a>\n' +
+                    '                </div>';
                 document.getElementById("modal-content").innerHTML = this.content;
                 this.disableBorderBottom();
                 document.getElementById("bank").style.borderBottom = "2px solid purple";
@@ -106,16 +122,28 @@
     }
 </script>
 <style lang="scss">
+    #logIn{
+        text-align: center;
+        padding: 10px;
+        border-radius: 20px;
+        color: white;
+        background: green;
+        display: inherit;
+    }
     #banks{
         margin: auto;
         max-width: 400px;
+        display: table-row;
     }
     #SWEDBANK, #SEB, #LHV, #COOP, #LUMINOR{
-        padding: 10px 02px 10px 32px;
+        padding: 10px 20px 10px 32px;
         font-size: 11px;
         margin: 3px;
         width: 30%;
+        text-align: center;
         float: left;
+        font-weight: bold;
+        left: -10px;
     }
     #SWEDBANK{
         color: orange;
@@ -415,5 +443,12 @@
     #idcard:hover,
     #bank:hover{
         color: purple;
+    }
+    #modal-content{
+        margin: auto;
+        text-align: left;
+        padding-left: 11%;
+        padding-top: 2%;
+        font-size: 12px;
     }
 </style>

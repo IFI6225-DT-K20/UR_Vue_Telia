@@ -19,10 +19,11 @@
             <div class="dropdowns">
                 <E_pood></E_pood>
             </div>
+            <div class="dropdowns" id="offers">Pakkumised</div>
             <div class="dropdowns">
                 <Abi></Abi>
             </div>
-            <div class="dropdowns">
+            <div class="dropdowns border_left">
                 <Iseteenindus></Iseteenindus>
             </div>
         </div>
@@ -68,6 +69,20 @@
 </script>
 
 <style scoped>
+    .border_left{
+        border-left: 1px solid black;
+    }
+    #offers{
+        color: black;
+        font-weight: normal;
+        font-size: 16px;
+        text-align: center;
+        padding-top: 15px;
+    }
+    #offers:hover{
+        color: #990ae3;
+        cursor: pointer;
+    }
     #bottom_header{
         padding-top: 10px;
         width: 100%;
@@ -81,6 +96,7 @@
     }
     .dropdowns{
         display: inline-block;
+        padding-bottom: 4%;
     }
     .middle_bottom_header{
         margin: auto;

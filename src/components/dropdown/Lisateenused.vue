@@ -4,45 +4,45 @@
             <div class="dropdown-column">
                 <div class="dropdown-group-1">
                     <p class="dropdown-header">MEELELAHUTUS</p>
-                    <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/">Spotify muusikateenus</router-link>
-                    <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/">Ajalehed ja ajakirjad</router-link>
+                    <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/" onclick="location.href='#/era';">Spotify muusikateenus</router-link>
+                    <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/" onclick="location.href='#/era';">Ajalehed ja ajakirjad <BlackButton context="PAKKUMINE"></BlackButton></router-link>
                 </div>
                 <div class="dropdown-group-3">
                     <p class="dropdown-header">SEADMETE OST</p>
-                    <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/">Järelmaks</router-link>
-                    <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/">Vana uueks</router-link>
+                    <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/" onclick="location.href='#/era';">Järelmaks</router-link>
+                    <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/" onclick="location.href='#/era';">Vana uueks <BlackButton context="UUS"></BlackButton></router-link>
                 </div>
             </div>
             <div class="dropdown-group-1">
                 <p class="dropdown-header">TURVALISUS JA KINDLUSTUS</p>
-                <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/">Viirusetõrje</router-link>
-                <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/">Seadmekindlustus</router-link>
-                <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/">Sõiduki e-kindlustus</router-link>
-                <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/">Reisikindlustus</router-link>
+                <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/" onclick="location.href='#/era';">Viirusetõrje <BlackButton context="PAKKUMINE"></BlackButton></router-link>
+                <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/" onclick="location.href='#/era';">Seadmekindlustus <BlackButton context="PAKKUMINE"></BlackButton></router-link>
+                <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/" onclick="location.href='#/era';">Sõiduki e-kindlustus</router-link>
+                <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/" onclick="location.href='#/era';">Reisikindlustus</router-link>
             </div>
             <div class="dropdown-group-1">
                 <p class="dropdown-header">MAKSED MOBIILIGA</p>
-                <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/">mTasku rakendus</router-link>
-                <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/">Apple App Store maksed</router-link>
-                <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/">Google Play maksed</router-link>
-                <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/">Mobiilne parkimine</router-link>
-                <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/">Mobiilimaksed</router-link>
-                <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/">Era-arve</router-link>
+                <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/" onclick="location.href='#/era';">mTasku rakendus</router-link>
+                <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/" onclick="location.href='#/era';">Apple App Store maksed</router-link>
+                <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/" onclick="location.href='#/era';">Google Play maksed</router-link>
+                <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/" onclick="location.href='#/era';">Mobiilne parkimine</router-link>
+                <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/" onclick="location.href='#/era';">Mobiilimaksed</router-link>
+                <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/" onclick="location.href='#/era';">Era-arve</router-link>
             </div>
             <div class="dropdown-group-1">
                 <p class="dropdown-header">MUU</p>
-                <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/">Mobiil-ID</router-link>
-                <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/">Minu Telia rakendus</router-link>
-                <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/">Lauatelefon</router-link>
-                <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/">Mobiili lisateenused</router-link>
-                <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/">TV lisateenused</router-link>
+                <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/" onclick="location.href='#/era';">Mobiil-ID</router-link>
+                <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/" onclick="location.href='#/era';">Minu Telia rakendus</router-link>
+                <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/" onclick="location.href='#/era';">Lauatelefon</router-link>
+                <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/" onclick="location.href='#/era';">Mobiili lisateenused</router-link>
+                <router-link class="nav-link dropdown-text" to="/era/mobiil/mobiilne-elu/" onclick="location.href='#/era';">TV lisateenused</router-link>
             </div>
             <div class="dropdown-group-2">
                 <p class="dropdown-header">Minu teenused</p>
-                <router-link class="nav-link dropdown-text" to="/era/1" >Lisateenused</router-link>
-                <router-link class="nav-link dropdown-text" to="/era/1" >Mobiili lisateenused</router-link>
-                <router-link class="nav-link dropdown-text" to="/era/1" >TV lisateenused</router-link>
-                <router-link class="nav-link dropdown-text" to="/abi/guides?q=mobiil">Juhendid ja KKK</router-link>
+                <router-link class="nav-link dropdown-text" to="/era/1" onclick="location.href='#/era';">Lisateenused</router-link>
+                <router-link class="nav-link dropdown-text" to="/era/1" onclick="location.href='#/era';">Mobiili lisateenused</router-link>
+                <router-link class="nav-link dropdown-text" to="/era/1" onclick="location.href='#/era';">TV lisateenused</router-link>
+                <router-link class="nav-link dropdown-text" to="/abi/guides?q=mobiil" onclick="location.href='#/era';">Juhendid ja KKK <BlackButton context="UUS"></BlackButton></router-link>
             </div>
             <!-- ToDo 2 extra columns below -->
         </b-dropdown>
@@ -50,8 +50,12 @@
 </template>
 
 <script>
+    import BlackButton from "./status/BlackButton";
     export default {
         name: "Lisateenused",
+        components: {
+            BlackButton
+        },
         methods: {
             onOver() {
                 this.$refs.dropdown.visible = true;

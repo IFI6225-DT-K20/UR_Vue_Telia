@@ -12,14 +12,14 @@
                 <router-link class="nav-link dropdown-text" to="/era/mobiil/valismaa/internet-ja-koned-valismaal/">TV kanalid</router-link>
                 <router-link class="nav-link dropdown-text" to="/era/mobiil/lisateenused/">Lisateenused</router-link>
                 <router-link class="nav-link dropdown-text" to="/era/mobiil/valismaa/eestist-helistamine-valismaale/">National Geographic +</router-link>
-                <router-link class="nav-link dropdown-text" to="/era/mobiil/valismaa/eestist-helistamine-valismaale/">Inspira</router-link>
+                <router-link class="nav-link dropdown-text" to="/era/mobiil/valismaa/eestist-helistamine-valismaale/">Inspira <BlackButton context="UUS"></BlackButton></router-link>
                 <router-link class="nav-link dropdown-text" to="/era/mobiil/valismaa/eestist-helistamine-valismaale/">Videolaenutus</router-link>
             </div>
             <div class="dropdown-group-2">
                 <p class="dropdown-header">Minu teenused</p>
                 <router-link class="nav-link dropdown-text" to="/era/1" >Kodused teenused</router-link>
                 <router-link class="nav-link dropdown-text" to="/era/1">Teenuse seadmete haldus</router-link>
-                <router-link class="nav-link dropdown-text" to="/abi/guides?q=mobiil">Juhendid ja KKK</router-link>
+                <router-link class="nav-link dropdown-text" to="/abi/guides?q=mobiil">Juhendid ja KKK <BlackButton context="UUS"></BlackButton></router-link>
             </div>
             <!-- ToDo 2 extra columns below -->
         </b-dropdown>
@@ -27,8 +27,12 @@
 </template>
 
 <script>
+    import BlackButton from "./status/BlackButton";
     export default {
         name: "TV",
+        components: {
+            BlackButton
+        },
         methods: {
             onOver() {
                 this.$refs.dropdown.visible = true;

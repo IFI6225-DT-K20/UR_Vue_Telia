@@ -3,35 +3,40 @@
         <b-dropdown append-icon="lock" id="dropdown-grouped" ref="dropdown" text="Iseteenindus" class="m-2 dropdown-era">
             <div class="dropdown-group-1">
                 <p class="dropdown-header">MINU TEENUSED</p>
-                <router-link class="nav-link dropdown-text" to="/notdoing">Avaleht</router-link>
-                <router-link class="nav-link dropdown-text" to="/notdoing">Mobiilsed teenused</router-link>
-                <router-link class="nav-link dropdown-text" to="/notdoing">Kodused teenused</router-link>
-                <router-link class="nav-link dropdown-text" to="/notdoing">Lisateenused</router-link>
-                <router-link class="nav-link dropdown-text" to="/notdoing">Teenuse seadmete haldus</router-link>
-                <router-link class="nav-link dropdown-text" to="/notdoing">Teenuse diagnostika</router-link>
+                <router-link class="nav-link dropdown-text" to="/notdoing" onclick="location.href='#/era';">Avaleht</router-link>
+                <router-link class="nav-link dropdown-text" to="/notdoing" onclick="location.href='#/era';">Mobiilsed teenused</router-link>
+                <router-link class="nav-link dropdown-text" to="/notdoing" onclick="location.href='#/era';">Kodused teenused</router-link>
+                <router-link class="nav-link dropdown-text" to="/notdoing" onclick="location.href='#/era';">Lisateenused</router-link>
+                <router-link class="nav-link dropdown-text" to="/notdoing" onclick="location.href='#/era';">Teenuse seadmete haldus</router-link>
+                <router-link class="nav-link dropdown-text" to="/notdoing" onclick="location.href='#/era';">Teenuse diagnostika</router-link>
             </div>
             <div class="dropdown-group-1">
                 <p class="dropdown-header">ARVELDUS</p>
-                <router-link class="nav-link dropdown-text" to="/notdoing">Arved</router-link>
-                <router-link class="nav-link dropdown-text" to="/notdoing">Arve tasumine</router-link>
-                <router-link class="nav-link dropdown-text" to="/notdoing">Arve seaded</router-link>
+                <router-link class="nav-link dropdown-text" to="/notdoing" onclick="location.href='#/era';">Arved</router-link>
+                <router-link class="nav-link dropdown-text" to="/notdoing" onclick="location.href='#/era';">Arve tasumine</router-link>
+                <router-link class="nav-link dropdown-text" to="/notdoing" onclick="location.href='#/era';">Arve seaded</router-link>
             </div>
             <div class="dropdown-group-1">
                 <p class="dropdown-header">KONTO</p>
-                <router-link class="nav-link dropdown-text" to="/notdoing">Kontaktandmed</router-link>
-                <router-link class="nav-link dropdown-text" to="/notdoing">Volitused</router-link>
-                <router-link class="nav-link dropdown-text" to="/notdoing">Lepingud</router-link>
-                <router-link class="nav-link dropdown-text" to="/notdoing">E-poe tellimuste ajalugu</router-link>
-                <router-link class="nav-link dropdown-text" to="/notdoing">Järelmaksu limiit</router-link>
+                <router-link class="nav-link dropdown-text" to="/notdoing" onclick="location.href='#/era';">Kontaktandmed</router-link>
+                <router-link class="nav-link dropdown-text" to="/notdoing" onclick="location.href='#/era';">Volitused</router-link>
+                <router-link class="nav-link dropdown-text" to="/notdoing" onclick="location.href='#/era';">Lepingud</router-link>
+                <router-link class="nav-link dropdown-text" to="/notdoing" onclick="location.href='#/era';">E-poe tellimuste ajalugu</router-link>
+                <router-link class="nav-link dropdown-text" to="/notdoing" onclick="location.href='#/era';">Järelmaksu limiit</router-link>
             </div>
+            <BlackButton context="PAKKUMINE"></BlackButton>
             <!-- ToDo 2 extra columns below -->
         </b-dropdown>
     </div>
 </template>
 
 <script>
+    import BlackButton from "./status/BlackButton";
     export default {
         name: "Iseteenindus",
+        components: {
+            BlackButton
+        },
         methods: {
             onOver() {
                 this.$refs.dropdown.visible = true;
