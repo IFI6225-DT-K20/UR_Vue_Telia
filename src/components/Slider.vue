@@ -154,7 +154,7 @@
             border: 1px solid #eee;
             border-radius: 0.25rem;
             display: flex;
-            margin: auto auto 10%;
+            margin: auto auto 5%;
             max-width: 100%;
             float: right;
             min-height: 500px;
@@ -163,7 +163,7 @@
             flex: 1;
         }
     }
-    @media only screen and (min-width: 600px){
+    @media only screen and (min-width: 1200px){
         .broadcast {
             border: 1px solid #eee;
             border-radius: 0.25rem;
@@ -172,9 +172,21 @@
             margin: auto;
             max-width: 80%;
             float: right;
+            min-height: 1000px;
         }
         .broadcast > .carousel {
             flex: 1;
+        }
+    }
+    @media only screen and (max-width: 1200px) and (min-width: 600px){
+        .broadcast {
+            border: 1px solid #eee;
+            border-radius: 0.25rem;
+            display: flex;
+            margin: auto auto 5%;
+            max-width: 100%;
+            float: right;
+            min-height: 850px;
         }
     }
 </style>

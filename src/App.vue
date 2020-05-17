@@ -220,6 +220,7 @@
     #top_right{
       text-align: right;
       display: inline-block;
+      float: right;
     }
     #sisenen:hover{
       color:#990ae3;
@@ -258,7 +259,286 @@
       font-weight: bold;
     }
   }
-  @media only screen and (min-width: 600px){
+  @media only screen and (max-width: 1200px) and (min-width: 600px){
+    #leftSlider{
+      text-align: center;
+    }
+    #sliderTitle{
+      font-weight: bold;
+      color: #990ae3;
+      font-size: 20px;
+    }
+    .sliderTitle{
+      width: 70%;
+      margin: auto auto 5%;
+    }
+    .sliderText{
+      margin-bottom: 5%;
+    }
+    #sliderText{
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .sliderButton{
+      color: white !important;
+      background: #990ae3;
+      border-radius: 40px;
+      padding: 15px 20px 15px 20px;
+      font-size: 12px;
+      font-weight: 800;
+      width: 40%;
+      margin: auto;
+    }
+    .sliderButton:hover{
+      border-radius: 40px;
+      padding: 15px 20px 15px 20px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .carousel__indicators{
+      visibility: hidden;
+    }
+    .carousel__indicator::before{
+      background: white !important;
+      opacity: 0.3;
+    }
+    .carousel__indicator--active::before{
+      background: #990ae3 !important;
+      opacity: 1;
+    }
+    #sliderImage{
+      width: 100%;
+      max-height: 569px;
+    }
+    #contact{
+      width: 60px;
+      position: sticky;
+      bottom: 3%;
+      right: 1%;
+      float: right;
+      z-index: 200;
+    }
+    #contact:hover{
+      cursor: pointer;
+    }
+    #x{
+      width: 60px;
+      position: sticky;
+      bottom: 9.5%;
+      right: 1.6%;
+      float: right;
+      z-index: 250;
+      visibility: hidden;
+    }
+    #x:hover{
+      cursor: pointer;
+    }
+    #leftFooterText{
+      margin-right: 2%;
+      color: black;
+      font-weight: bold;
+    }
+    #footerBottom{
+      display: flex;
+      max-width: 1180px;
+      margin: 3% auto auto;
+      width: 100%;
+      font-size: 11px;
+    }
+    #community{
+      min-height: 520px;
+      display: flex;
+    }
+    #communityBackground{
+      background:url("https://res.cloudinary.com/telia/image/upload/f_auto,fl_lossy,q_auto:best,w_0.5/era/avaleht/full_bg_mobile.png") no-repeat 0 0;
+      background-size: 100%;
+      width: 100%;
+      height: 520px;
+      z-index: -1;
+      position: absolute;
+      overflow: hidden;
+      right: 0;
+      left: 0;
+    }
+    #special{
+      max-width: 1100px;
+      width: 100%;
+      margin: 100px auto;
+      display: table;
+    }
+    #titleLeft{
+      font-weight: bold;
+      color: #990ae3;
+      font-size: 28px;
+      margin-bottom: 5%;
+    }
+    #offerText{
+      font-size: 16px;
+      margin-bottom: 5%;
+    }
+    #offerName{
+      font-size: 16px;
+    }
+    #offerPriceMonth{
+      font-size: 28px;
+      font-weight: bold;
+      color: black;
+    }
+    #offerPriceMonthText{
+      font-size: 20px;
+      color: black;
+    }
+    #offerPrice{
+      font-size: 14px;
+      color: silver;
+      margin-top: 1%;
+    }
+    #offerImage{
+      width: 100%;
+      height: auto;
+    }
+    #specialOffer{
+      width: 1100px;
+      margin: 10% 20% auto auto;
+      display: table-cell;
+      padding-top: 5%;
+    }
+    #app {
+      font-family: Avenir, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-align: center;
+    }
+    #header_container{
+      height: 110px;
+      position: sticky;
+      top: 0;
+      background: #f2f2f2;
+      z-index: 200;
+      width: 100%;
+    }
+    #container{
+      background: rgba(244, 244, 244, 0.87);
+      z-index: 50;
+      display: inline;
+    }
+    #sisenen:hover{
+      color:#990ae3;
+      cursor: pointer;
+    }
+    #leftOffer{
+      float: left;
+      width: 45%;
+      text-align: left;
+      line-height: 1;
+    }
+    #rightOffer{
+      float: right;
+      width: 55%;
+      line-height: 1;
+    }
+    .nav-link{
+      color: #000000;
+      border: 0;
+      font-weight: bold;
+      font-size: 12px;
+      display: inline-block;
+      height: 40px;
+      padding: 0 20px 0 20px;
+    }
+    .nav-link:hover{
+      color:#990ae3;
+    }
+    #top_header{
+      margin: auto;
+      width: 100%;
+      max-width: 1180px;
+      height: 40px;
+      display: flex;
+      justify-content: space-between;
+    }
+    #top_left{
+      text-align: left;
+      display: inline-block;
+    }
+    #top_right{
+      text-align: right;
+      display: inline-block;
+    }
+    #bottom_header{
+      background: #ffffff;
+      height: 70px;
+    }
+    .router-link-active{
+      color: #990ae3;
+      background: white;
+      border-top-color: #990ae3;
+      border-top: 3px solid;
+    }
+    .dropdown-menu{
+      color: #990ae3;
+      border-top: 3px solid;
+      width: 1180px;
+      max-width: 1180px;
+      height: 300px;
+      overflow: hidden;
+    }
+    .dropdown-era{
+      background-color: white;
+    }
+    .btn-secondary{
+      background: white;
+      color: black;
+      border-color: white;
+      font-size: 16px;
+    }
+    .dropdown-toggle[aria-expanded="true"] {
+      background:#FFF !important;
+      border-color: white !important;
+      color: #990ae3 !important;
+    }
+    .dropdown-toggle:after {
+      display: none;
+    }
+    .sliderButton{
+      color: white !important;
+      background: #990ae3;
+      border-radius: 40px;
+      padding: 15px 20px 15px 20px;
+      font-size: 12px;
+      font-weight: 800;
+      position:relative;
+    }
+    .sliderButton:hover{
+      color: white !important;
+      background: #990ae3;
+      border-radius: 40px;
+      padding: 15px 20px 15px 20px;
+      font-size: 12px;
+      font-weight: 800;
+      position:relative;
+      cursor: pointer;
+    }
+    .newsButton{
+      border-radius: 20px;
+      padding: 10px;
+      color: #990ae3 !important;
+      margin: 10px;
+      float: left;
+      font-size: 12px;
+      font-weight: 800;
+      position:relative;
+      border: 2px solid transparent;
+    }
+    .newsButton:hover{
+      border: 2px solid #990ae3;
+      cursor: pointer;
+      position:relative;
+      padding: 10px;
+      margin: 10px;
+    }
+  }
+  @media only screen and (min-width: 1200px){
     #sliderImage{
       width: 100%;
       max-height: 569px;

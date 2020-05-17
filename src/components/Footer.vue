@@ -63,7 +63,14 @@
             margin: 5% auto auto;
         }
     }
-    @media only screen and (min-width: 600px){
+    @media only screen and (max-width: 1200px) and (min-width: 600px){
+        #footer{
+            display: flex;
+            width: 100%;
+            margin: 5% auto auto;
+        }
+    }
+    @media only screen and (min-width: 1200px){
         #footer{
             display: flex;
             width: 1180px;

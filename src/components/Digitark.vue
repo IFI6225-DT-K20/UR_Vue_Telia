@@ -59,7 +59,28 @@
             font-size: 16px;
         }
     }
-    @media only screen and (min-width: 600px){
+    @media only screen and (max-width: 1200px) and (min-width: 600px){
+        #image1{
+            width: 240px;
+        }
+        #digitark{
+            width: 100%;
+            margin: 7% auto auto;
+            display: inline-grid;
+        }
+        #digitarkTop{
+            text-align: left;
+        }
+        .digitarkBot{
+            margin-top: 3%;
+            text-align: left;
+        }
+        #leftText{
+            margin-top: 3%;
+            font-size: 16px;
+        }
+    }
+    @media only screen and (min-width: 1200px){
         #leftText{
             margin-top: 3%;
             font-size: 16px;

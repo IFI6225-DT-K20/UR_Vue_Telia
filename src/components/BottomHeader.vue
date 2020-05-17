@@ -19,12 +19,18 @@
             <div class="dropdowns">
                 <E_pood></E_pood>
             </div>
-            <div class="dropdowns" id="offers">Pakkumised</div>
+            <div class="dropdowns m-2" id="offers">Pakkumised</div>
             <div class="dropdowns">
                 <Abi></Abi>
             </div>
             <div class="dropdowns border_left">
                 <Iseteenindus></Iseteenindus>
+            </div>
+            <div id="mobileDropdown" class="m-2">
+                <img id="menu" src="../assets/menuu.png" alt="menuu"/>
+            </div>
+            <div id="search" class="m-2">
+                <img id="searchIcon" src="../assets/search.png" alt="search"/>
             </div>
         </div>
     </div>
@@ -69,7 +75,7 @@
 </script>
 
 <style scoped>
-    @media only screen and (max-width: 600px){
+    @media only screen and (max-width: 1200px){
         #bottom_header{
             padding-top: 10px;
             width: 100%;
@@ -80,8 +86,17 @@
             visibility: hidden;
             width: 0;
         }
+        #mobileDropdown{
+            float: right;
+        }
+        #search{
+            float: right;
+        }
     }
-    @media only screen and (min-width: 600px){
+    @media only screen and (min-width: 1200px){
+        #mobileDropdown{
+            visibility: hidden;
+        }
         .middle_bottom_header{
             margin: auto;
             width: 100%;
@@ -95,9 +110,27 @@
             text-align: left;
             z-index: 100;
         }
+        #search{
+            display: block;
+            width: 70%;
+        }
+        #searchIcon{
+            float: right;
+            padding-right: 10%;
+        }
     }
     .border_left{
         border-left: 1px solid black;
+    }
+    #searchIcon:hover{
+        cursor: pointer;
+    }
+    #offers{
+        color: black;
+        font-weight: normal;
+        font-size: 16px;
+        text-align: center;
+        padding-top: 1%;
     }
     #offers:hover{
         color: #990ae3;
